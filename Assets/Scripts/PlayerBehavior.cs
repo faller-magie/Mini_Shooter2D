@@ -25,6 +25,7 @@ public class PlayerBehavior : MonoBehaviour
         corps = GetComponent<Rigidbody2D>();
 
     }
+
     //La physique de deplacement du joueur, géré par unity
     private void FixedUpdate()
     {
@@ -54,7 +55,7 @@ public class PlayerBehavior : MonoBehaviour
 
     private void OnShootPerformed(InputAction.CallbackContext obj)
     {
-        // On instantie un projectile à la position du joueur avec une rotation nulle
+        // On instantie la balle du pistolet à la position du joueur avec une rotation nulle
         Instantiate(bullet,transform.position, Quaternion.identity);
     }
 }
