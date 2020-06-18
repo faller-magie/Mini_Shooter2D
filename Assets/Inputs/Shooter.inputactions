@@ -7,15 +7,15 @@
             "actions": [
                 {
                     "name": "Move",
-                    "type": "Button",
+                    "type": "Value",
                     "id": "225a633b-6dd6-4ecb-bfa7-1df6c2015a29",
-                    "expectedControlType": "Button",
+                    "expectedControlType": "Vector2",
                     "processors": "",
                     "interactions": ""
                 },
                 {
                     "name": "Shoot",
-                    "type": "Value",
+                    "type": "Button",
                     "id": "c618b8dc-eb69-4517-9e8b-6f4fea8196a0",
                     "expectedControlType": "Button",
                     "processors": "",
@@ -25,56 +25,78 @@
             "bindings": [
                 {
                     "name": "",
-                    "id": "2d980e81-6754-4539-98fe-404352b7d603",
+                    "id": "891c1511-0664-4b9c-b85d-7dd5e546cef4",
+                    "path": "<Mouse>/leftButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Shoot",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "2D Vector",
+                    "id": "196d165d-9f69-4f97-aade-136316ef7a3c",
+                    "path": "2DVector",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Move",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "up",
+                    "id": "e4b5893b-4cea-49b6-9a23-bdd5616f1934",
                     "path": "<Keyboard>/z",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
                     "action": "Move",
                     "isComposite": false,
-                    "isPartOfComposite": false
+                    "isPartOfComposite": true
                 },
                 {
-                    "name": "",
-                    "id": "f0e3559f-c8b1-470f-97df-16a95434ec42",
-                    "path": "<Keyboard>/q",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "Move",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "da44c612-1409-4f30-a5c5-1e978841d10b",
+                    "name": "down",
+                    "id": "54f75709-543a-429b-adea-274117f7233a",
                     "path": "<Keyboard>/s",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
                     "action": "Move",
                     "isComposite": false,
-                    "isPartOfComposite": false
+                    "isPartOfComposite": true
                 },
                 {
-                    "name": "",
-                    "id": "dc730d2e-17fa-43d4-8023-44e3f3f858a0",
+                    "name": "left",
+                    "id": "df4fc417-dd0b-4683-805c-09a11b094b4e",
+                    "path": "<Keyboard>/q",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Move",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "right",
+                    "id": "506a0f80-4d82-4c36-bcd3-7924445510c5",
                     "path": "<Keyboard>/d",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
                     "action": "Move",
                     "isComposite": false,
-                    "isPartOfComposite": false
+                    "isPartOfComposite": true
                 },
                 {
                     "name": "",
-                    "id": "891c1511-0664-4b9c-b85d-7dd5e546cef4",
-                    "path": "",
+                    "id": "08b38707-ef6d-4b35-b6d9-1e2a5a575b15",
+                    "path": "<Mouse>/radius",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "Shoot",
+                    "action": "Move",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
