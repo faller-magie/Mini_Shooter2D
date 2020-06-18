@@ -2,7 +2,7 @@
     "name": "Shooter",
     "maps": [
         {
-            "name": "Shooter",
+            "name": "Player",
             "id": "cb1c439f-5c23-41bb-ae10-27cc4786a4d6",
             "actions": [
                 {
@@ -48,7 +48,7 @@
                 {
                     "name": "up",
                     "id": "e4b5893b-4cea-49b6-9a23-bdd5616f1934",
-                    "path": "<Keyboard>/z",
+                    "path": "<Keyboard>/w",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
@@ -70,7 +70,7 @@
                 {
                     "name": "left",
                     "id": "df4fc417-dd0b-4683-805c-09a11b094b4e",
-                    "path": "<Keyboard>/q",
+                    "path": "<Keyboard>/a",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
