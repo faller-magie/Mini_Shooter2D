@@ -22,11 +22,20 @@ public class PlayerBehavior : MonoBehaviour
         inputs.Player.Move.performed += OnMovePerfomed;
         inputs.Player.Move.canceled += OnMoveCanceled;
         inputs.Player.Shoot.performed += OnShootPerformed;
+        corps = GetComponent<Rigidbody2D>();
+
     }
     //La physique de deplacement du joueur, géré par unity
-     private void FixedUpdate()
+    private void FixedUpdate()
     {
-        corps.velocity = direction * (speed * Time.fixedDeltaTime);
+        var horizontalPosition = new Vector2(transform.position.x,0);
+        var verticalPosition = new Vector2(0,transform.position.y);
+        direction = horizontalPosition - verticalPosition;
+    }
+
+    void update()
+    {
+
     }
 
     //Quand le joueur appuye sur la touche de deplacement
