@@ -4,15 +4,22 @@ using UnityEngine;
 
 public class MusicMenu : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    [SerializeField] private AudioSource _audioSource;
 
-    // Update is called once per frame
-    void Update()
+    private void Awake()
     {
-        
+         DontDestroyOnLoad(transform.gameObject);
+         _audioSource = GetComponent<AudioSource>();
+    }
+ 
+    public void PlayMusic()
+    {
+         if (_audioSource.isPlaying) return;
+         _audioSource.Play();
+    }
+ 
+    public void StopMusic()
+    {
+         _audioSource.Stop();
     }
 }
